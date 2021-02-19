@@ -5,18 +5,22 @@ import {
   BrowserRouter as Router,
   Switch,
   Route,
-  Link
+  Redirect
 } from "react-router-dom";
 
 
-
+import "bootstrap/dist/css/bootstrap.min.css";
+import "assets/css/animate.min.css";
+import "assets/scss/light-bootstrap-dashboard-react.scss?v=2.0.0";
+import "assets/css/demo.css";
+import "@fortawesome/fontawesome-free/css/all.min.css";
 
 // pages
 import Home from "./pages/home/Home";   
 import Service from "./pages/service/Service";
 import Store from "./pages/store/Store";
 import Project from "./pages/projects/Project";
-import Manager from "./pages/manager/Manager";
+import Admin from './pages/admin/Admin'
 
 
 
@@ -58,8 +62,9 @@ function App() {
             </Route>
             <Route path="/store" exact component={Store}>          
             </Route>
-            <Route path="/manager" exact component={Manager}>          
-            </Route>
+        
+            <Route path="/admin" render={(props) => <Admin {...props} />} />
+            <Redirect from="/admin" to="/admin/dashboard" />
           </Switch>
         </Router>                  
       </AppContext.Provider>

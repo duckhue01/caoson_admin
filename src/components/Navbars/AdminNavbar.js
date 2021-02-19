@@ -19,7 +19,7 @@ import React, { Component } from "react";
 import { useLocation } from "react-router-dom";
 import { Navbar, Container, Nav, Dropdown, Button } from "react-bootstrap";
 
-import routes from "../../pages/manager/routes.js";
+import routes from "../../pages/admin/routes.js";
 
 function Header() {
   const location = useLocation();

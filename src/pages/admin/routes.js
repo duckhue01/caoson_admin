@@ -15,14 +15,12 @@
 * The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 
 */
-import Dashboard from "../../templates/manager/Dashboard.js";
-import UserProfile from "../../templates/manager/UserProfile.js";
-import TableList from "../../templates/manager/TableList.js";
-import Typography from "../../templates/manager/Typography.js";
-import Icons from "../../templates/manager/Icons.js";
-import Maps from "../../templates/manager/Maps.js";
-import Notifications from "../../templates/manager/Notifications.js";
-import Upgrade from "../../templates/manager/Upgrade.js";
+import Dashboard from "../../templates/admin/Dashboard.js";
+import UserProfile from "../../templates/admin/UserProfile.js";
+import TableList from "../../templates/admin/TableList.js";
+import Typography from "../../templates/admin/Typography.js";
+import Notifications from "../../templates/admin/Notifications.js";
+import Upgrade from "../../templates/admin/Upgrade.js";
 
 const dashboardRoutes = [
   {
@@ -59,20 +57,6 @@ const dashboardRoutes = [
     name: "Typography",
     icon: "nc-icon nc-paper-2",
     component: Typography,
-    layout: "/admin",
-  },
-  {
-    path: "/icons",
-    name: "Icons",
-    icon: "nc-icon nc-atom",
-    component: Icons,
-    layout: "/admin",
-  },
-  {
-    path: "/maps",
-    name: "Maps",
-    icon: "nc-icon nc-pin-3",
-    component: Maps,
     layout: "/admin",
   },
   {
